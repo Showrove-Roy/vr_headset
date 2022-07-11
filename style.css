@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+:root {
+  --main-color: #0a183d;
+  --main-color2: #ffffff;
+  --paragraph-color: #6a7080;
+  --paragraph-color2: #c1c4cc;
+  --main-bgC: #0a183d;
+  --btn-color: #fc0254;
+  --section-bgC: #1c294a;
+  --nav-bgC: #08192d;
+  --optional-bgC: rgb(206, 206, 206);
+}
+h1 {
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: 700;
+}
+p {
+  color: var(--paragraph-color);
+  font-size: 18px;
+}
+
+/* Navbar section start */
+
+nav {
+  display: flex;
+  background: #0214283d;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid var(--main-bgC);
+}
+nav .logo {
+  width: 30%;
+  padding: 5px 30px 5px 200px;
+}
+nav .logo img {
+  width: 50px;
+  height: 50px;
+}
+nav .menu {
+  width: 70%;
+  padding: 5px 200px 5px 0;
+}
+
+nav .menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 2px 10px;
+}
+.menu ul li:hover {
+  background-color: var(--btn-color);
+  border-radius: 2px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: var(--main-color2);
+  font-size: 20px;
+}
+/* Navbar section start */
+
+/* Header section start */
+header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      60deg,
+      rgba(10, 24, 61, 0.603),
+      rgba(252, 2, 85, 0.534) 200%
+    ),
+    url(media/banner_1.jpg) no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+}
+.wlc-text {
+  margin: auto;
+  padding: 0 20%;
+}
+
+header h1 {
+  color: var(--main-color2);
+  text-align: center;
+}
+header p {
+  color: var(--paragraph-color2);
+  text-align: center;
+}
+
+/* Header section end */
